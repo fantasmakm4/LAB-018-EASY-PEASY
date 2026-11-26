@@ -1,0 +1,27 @@
+# Nmap 7.98 — escaneo TCP completo con detección de versiones y scripts
+# Comando: nmap -p- --open -sC -sV -T5 -oN nmap-completo.txt 10.66.129.175
+# Fecha informada por Nmap: 2026-11-26 21:24 +0100
+# Duración informada: 595.63 segundos
+
+Host: 10.66.129.175
+Estado: activo
+Puertos cerrados: 65470
+Puertos filtrados: 62
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    nginx 1.16.1
+| http-robots.txt: 1 disallowed entry
+|_/
+|_http-server-header: nginx/1.16.1
+|_http-title: Welcome to nginx!
+6498/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: RSA, ECDSA, ED25519
+65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry
+|_/
+|_http-server-header: Apache/2.4.43 (Ubuntu)
+|_http-title: Apache2 Debian Default Page: It works
+
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nota: Nmap informó que algunos puertos podían quedar filtrados por el límite de retransmisiones.

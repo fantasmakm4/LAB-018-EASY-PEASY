@@ -1,0 +1,7 @@
+# Gobuster v3.6 — http://10.66.129.175/
+# Wordlist: /usr/share/wordlists/dirb/common.txt
+# Threads: 10
+
+/hidden              (Status: 301) [--> /hidden/]
+/index.html          (Status: 200) [Size: 612]
+/robots.txt          (Status: 200) [Size: 43]

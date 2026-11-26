@@ -1,0 +1,8 @@
+# Evidencias y banderas se mantienen locales
+05-Evidencias/privado/*
+!05-Evidencias/privado/.gitkeep
+user_flag.txt
+root_flag.txt
+*.pcap
+*.session
+.DS_Store
