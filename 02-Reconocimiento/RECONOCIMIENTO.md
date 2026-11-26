@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Identificar los servicios abiertos y enumerar los tres sitios web visibles en el objetivo autorizado.
+Identificar los servicios abiertos y enumerar los dos servidores web visibles en el objetivo autorizado.
 
 ## Escaneo inicial
 

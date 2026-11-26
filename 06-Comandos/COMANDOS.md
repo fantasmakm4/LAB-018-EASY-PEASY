@@ -23,12 +23,13 @@ Ejecutar solo contra la IP de la máquina activa del laboratorio TryHackMe. Sust
 
     printf '%s\n' 'CADENA_BASE64' | base64 -d
     hashid 'HASH'
+    john --format=Raw-SHA256 --wordlist=/ruta/a/easypeasy.txt hash.txt
     john --format=GOST --wordlist=/ruta/a/easypeasy.txt hash.txt
     wget -O binarycodepixabay.jpg http://10.66.129.175:65524/n0th1ng3ls3m4tt3r/binarycodepixabay.jpg
     steghide extract -sf binarycodepixabay.jpg -p 'FRASE_STEGHIDE'
     cat secrettext.txt
 
-La lista easypeasy.txt no estaba en ~/Downloads durante esta sesión. John informó que no podía abrir el archivo; por eso la ruta debe apuntar a la ubicación real de la lista proporcionada por la sala.
+Los intentos con Raw-SHA256 y GOST no llegaron a probar candidatos porque easypeasy.txt no estaba en ~/Downloads. John informó “No such file or directory”; la ruta debe apuntar a la ubicación real de la lista proporcionada por la sala. No se conserva una salida exitosa de John.
 
 ## Decodificar contraseña binaria
 
